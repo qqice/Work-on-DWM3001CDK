@@ -6,33 +6,33 @@
 
 优点：
 
-社区维护活跃
+* 社区维护活跃
 
-支持BLE
+* 支持BLE
 
-（理论上）支持NFC
+* （理论上）支持NFC
 
-支持从NRF52833的USB口通过DFU烧入程序
+* 支持从NRF52833的USB口通过DFU烧入程序
 
 缺点：
 
-需要额外刷入单独的bootloader
+* 需要额外刷入单独的bootloader
 
-编写代码时需要打开串口，否则将无法从NRF52833的USB口烧入程序（如果您遇到了这个问题，可以清空flash后再次刷入一次bootloader即可恢复）
+* 编写代码时需要打开串口，否则将无法从NRF52833的USB口烧入程序（如果您遇到了这个问题，可以清空flash后再次刷入一次bootloader即可恢复）
 
-2.https://github.com/qqice/arduino-nRF5
+2.[qqice/arduino-nRF5](https://github.com/qqice/arduino-nRF5)
 
 优点：
 
-无需刷入bootloader，开箱即用
+* 无需刷入bootloader，开箱即用
 
-理论上支持BLE，但需要额外刷入SoftDevice
+* 理论上支持BLE，但需要额外刷入SoftDevice
 
 缺点：
 
-暂不支持从NRF52833的USB口通过DFU烧入程序
+* 暂不支持从NRF52833的USB口通过DFU烧入程序
 
-暂不支持NRF52833的USB串口功能，需要外接USB转TTL工具读取串口
+* 暂不支持NRF52833的USB串口功能，需要外接USB转TTL工具读取串口
 
 
 
