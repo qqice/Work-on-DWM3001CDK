@@ -50,5 +50,5 @@
 |    外设    | 协议 | 状态 |                              库                              |     代码示例      |
 | :--------: | :--: | :--: | :----------------------------------------------------------: | :---------------: |
 | LIS2DH12TR | I2C  |  ✅   | [SparkFun_LIS2DH12_Arduino_Library](https://github.com/sparkfun/SparkFun_LIS2DH12_Arduino_Library) | IMU_BasicReadings |
-|   DW3110   | SPI  |  ❓   |                                                              |                   |
+|   DW3110   | SPI  |  ✅   | [qqice/UWB-DW3000-NRF52](https://github.com/qqice/UWB-DW3000-NRF52) |  见仓库examples   |
 
