@@ -36,14 +36,15 @@
 
 ## 功能支持
 
-| 功能 |   Adafruit_nRF52_Arduino支持状态   |     arduino-nRF5支持状态     |     代码示例      |
-| :--: | :--------------------------------: | :--------------------------: | :---------------: |
-| GPIO |                 ✅                  |              ✅               |     RGB_Blink     |
-| UART |                 ✅                  |              ✅               | SerialPassthrough |
-| I2C  |                 ✅                  |              ✅               | IMU_BasicReadings |
-| SPI  |    ✅（使用外接SPI屏幕测试成功）    | ✅（使用外接SPI屏幕测试成功） |       暂无        |
-| BLE  |    ✅（需使用adafruit版本的SDK）    |              ❓               |  任意一个BLE示例  |
-| NFC  | ❓（手头没有NFC天线，暂时测不起来） |              ❓               |                   |
+| 功能 |   Adafruit_nRF52_Arduino支持状态   |     arduino-nRF5支持状态     |        代码示例        |
+| :--: | :--------------------------------: | :--------------------------: | :--------------------: |
+| GPIO |                 ✅                  |              ✅               |       RGB_Blink        |
+| UART |                 ✅                  |              ✅               |   SerialPassthrough    |
+| I2C  |                 ✅                  |              ✅               |   IMU_BasicReadings    |
+| SPI  |    ✅（使用外接SPI屏幕测试成功）    | ✅（使用外接SPI屏幕测试成功） |          暂无          |
+| BLE  |    ✅（需使用adafruit版本的SDK）    |              ❓               |    任意一个BLE示例     |
+| NFC  | ❓（手头没有NFC天线，暂时测不起来） |              ❓               |                        |
+| UWB  |                 ✅                  |              ❓               | 参考“外设支持”中DW3110 |
 
 ## 外设支持
 
@@ -59,19 +60,31 @@
 ### 1. 安装Arduino IDE
 
 ### 2. 安装Adafruit_nRF52_Arduino或arduino-nRF5
+
 安装流程为：
+
 2.1. 打开Arduino IDE
+
 2.2. 从开发板管理器中安装官方的Adafruit_nRF52_Arduino或arduino-nRF5
+
 2.3. 从我的github仓库中下载修改后的Adafruit_nRF52_Arduino或arduino-nRF5
+
 2.4. 将下载的文件解压覆盖到Arduino的**对应**文件夹中
+
 2.5. 重启Arduino IDE
 
 ### 3. 安装额外的外设库
+
 安装流程为：
+
 3.1. 打开Arduino IDE
+
 3.2. 去上文提及支持的外设库的github仓库中下载zip文件
+
 3.3. 在如图所示的地方添加zip文件
+
 ![添加库](https://files.seeedstudio.com/wiki/Get_Started_With_Arduino/img/Add_Zip.png)
+
 3.4. 重启Arduino IDE
 
 ### 4.安装JFlashLite，用于烧录bootloader
@@ -79,18 +92,31 @@
 ## 开发板端准备工作：
 
 ### 1. 烧录bootloader（仅Adafruit_nRF52_Arduino需要）
+
 烧录流程为：
+
 1.1. 将DWM3001CDK的**JLink口**连接到电脑（如图所示）
+
 ![Jlink口](assets/接口指示.png)
+
 1.2. 打开JFlashLite
+
 1.3. 选择**NRF52833_XXAA**，点击**OK**
+
 ![打开JFlashLite](assets/打开JFlashLite.png)
+
 1.4. 下载[bootloader](https://github.com/qqice/Adafruit_nRF52_Arduino/raw/refs/heads/master/bootloader/DWM3001CDK/DWM3001CDK_bootloader-0.9.1_s140_7.3.0.hex)
+
 1.5. 参照图片中的设置选择刚刚下载的bootloader，点击**Program Device**
+
 ![选择bootloader](assets/选择bootloader.png)
+
 1.6. 等待烧录完成，拔下JLink口，将DWM3001CDK重新通过**NRF USB口**接入电脑
+
 1.7. Arduino IDE中识别到新的设备，选择**Qorvo DWM3001C Module Development Kit**
+
 ![选择板卡](assets/选择板卡.png)
+
 1.8. 大功告成！
 
 # 疑难解答
