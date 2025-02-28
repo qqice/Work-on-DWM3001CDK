@@ -67,6 +67,12 @@
 
 2.2. 从开发板管理器中安装官方的Adafruit_nRF52_Arduino或arduino-nRF5
 
+**请观察以下截图，确保下载了正确的SDK！！！**
+Adafruit_nRF52_Arduino
+![安装Adafruit_nRF52_Arduino](assets/adafruit sdk.png)
+arduino-nRF5
+![安装arduino-nRF5](assets/nordic sdk.png)
+
 2.3. 从我的github仓库中下载修改后的Adafruit_nRF52_Arduino或arduino-nRF5
 
 2.4. 将下载的文件解压覆盖到Arduino的**对应**文件夹中
