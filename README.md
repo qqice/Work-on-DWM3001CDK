@@ -69,8 +69,10 @@
 
 **请观察以下截图，确保下载了正确的SDK！！！**
 Adafruit_nRF52_Arduino
+[https://adafruit.github.io/arduino-board-index/package_adafruit_index.json](https://adafruit.github.io/arduino-board-index/package_adafruit_index.json)
 ![安装Adafruit_nRF52_Arduino](assets/adafruit sdk.png)
 arduino-nRF5
+[https://sandeepmistry.github.io/arduino-nRF5/package_nRF5_boards_index.json](https://sandeepmistry.github.io/arduino-nRF5/package_nRF5_boards_index.json)
 ![安装arduino-nRF5](assets/nordic sdk.png)
 
 2.3. 从我的github仓库中下载修改后的Adafruit_nRF52_Arduino或arduino-nRF5
