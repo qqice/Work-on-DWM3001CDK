@@ -53,6 +53,32 @@
 | LIS2DH12TR | I2C  |  ✅   | [SparkFun_LIS2DH12_Arduino_Library](https://github.com/sparkfun/SparkFun_LIS2DH12_Arduino_Library) | IMU_BasicReadings |
 |   DW3110   | SPI  |  ✅   | [qqice/UWB-DW3000-NRF52](https://github.com/qqice/UWB-DW3000-NRF52) |  见仓库examples   |
 
+## 引脚映射列表（基于Adafruit版本的SDK）
+
+|  引脚  |   功能   |    备注    |
+| :----: | :------: | :--------: | 
+|  PIN_BUTTON_BOTTOM | 下面的按钮 | 上面的那个是重置按钮 |
+|LED_RED_TOP| 顶部红色LED | 通过LED_BUILTIN调用 |
+|LED_RED_BOT| 底部红色LED | |
+|LED_GREEN| 绿色LED | |
+|LED_BLUE| 蓝色LED | |
+| PIN_SERIAL1_RX | 硬件串口RX | 通过Serial1调用 |
+| PIN_SERIAL1_TX | 硬件串口TX | 通过Serial1调用 |
+|ACC_SDA| 内置加速度计SDA | 通过Wire1调用 |
+|ACC_SCL| 内置加速度计SCL | 通过Wire1调用 |
+|PIN_ACC_IRQ| 内置加速度计中断 | |
+|SDA| 外部I2C SDA | 通过Wire调用 |
+|SCL| 外部I2C SCL | 通过Wire调用 |
+|SS| 外部SPI 片选 | 通过SPI调用 |
+|MOSI| 外部SPI MOSI | 通过SPI调用 |
+|MISO| 外部SPI MISO | 通过SPI调用 |
+|SCK| 外部SPI SCK | 通过SPI调用 |
+|SS1/DW_CS| 内置DW3110（UWB芯片）SPI 片选 |  |
+|MOSI1/DW_MOSI| 内置DW3110（UWB芯片）SPI MOSI |  |
+|MISO1/DW_MISO| 内置DW3110（UWB芯片）SPI MISO |  |
+|SCK1/DW_SCK| 内置DW3110（UWB芯片）SPI SCK |  |
+|DW_RST| 内置DW3110（UWB芯片）复位 |  |
+|DW_IRQ| 内置DW3110（UWB芯片）中断 |  |
 # 使用教程
 
 ## 电脑端准备工作：
